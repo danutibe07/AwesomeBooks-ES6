@@ -1,0 +1,98 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    height: 800px;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.hidden{
+    display: none !important;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding: 30px 33%;
+    width: 100%;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    background-color: #b14c6b;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    padding: 30px 10%;
+    width: 100%;
+    font-weight: 700;
+    color: #fff;
+    background-color: #b14c6b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav .nav-header{
+    font-size: 25px;
+    float: left;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+nav ul li a{
+    font-size: 15px;
+}
+
+#heading{
+    text-align: center;
+    margin-top: 150px;
+    color: #b14c6b;
+}
+
+#libray{
+    border: 2px solid #b14c6b;
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        width: 100%;
+        padding: 20px 10% ;
+        font-size: 15px;
+    }
+
+    nav{
+        padding: 15px 5%;
+    }
+    nav .nav-header{
+        font-size: 15px;
+    }
+
+    nav ul{
+        gap: 10px;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+}
