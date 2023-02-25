@@ -1,98 +1,192 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-body{
-    height: 800px;
-    overflow: hidden;
-    width: 100%;
-    font-family: 'Inter', sans-serif;
-}
-.hidden{
-    display: none !important;
+ul {
+  list-style: none;
 }
 
-
-footer{
-    position: absolute;
-    bottom: 0;
-    padding: 30px 33%;
-    width: 100%;
-    font-weight: 700;
-    font-size: 25px;
-    color: #fff;
-    background-color: #b14c6b;
+body {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
 }
 
-nav{
-    position: absolute;
-    top: 0;
-    padding: 30px 10%;
-    width: 100%;
-    font-weight: 700;
-    color: #fff;
-    background-color: #b14c6b;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.hidden {
+  display: none !important;
 }
 
-nav .nav-header{
-    font-size: 25px;
-    float: left;
-    color: #fff;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-nav ul li a{
-    font-size: 15px;
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 33%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  background-color: #b14c6b;
 }
 
-#heading{
-    text-align: center;
-    margin-top: 150px;
+nav {
+  position: absolute;
+  top: 0;
+  padding: 30px 10%;
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #b14c6b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav .nav-header {
+  font-size: 25px;
+  float: left;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+nav ul li a {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 150px;
+  color: #b14c6b;
+}
+
+#libray {
+  border: 2px solid #b14c6b;
+  margin: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact {
+  text-align: center;
+  color: #b14c6b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .linkstrees {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.link-list {
+  text-decoration: none;
+  text-align: center;
+  padding: 24px 32px;
+  background-color: #fff;
+  color: #b14c6b !important;
+  border: 2px solid #b14c6b;
+  border-radius: 8px;
+  list-style: none;
+  justify-self: center;
+  width: 30%;
+  margin: 20px auto;
+}
+
+ol a{
     color: #b14c6b;
+    width: 100%;
+    padding: 24px 32px;
+    width: 30%;
 }
 
-#libray{
-    border: 2px solid #b14c6b;
-    margin: 20px;
-    text-align: center;
-    padding: 30px;
+.form {
+  text-align: center;
+  color: #b14c6b;
 }
 
-@media screen and (max-width: 700px){
-    footer{
-        width: 100%;
-        padding: 20px 10% ;
-        font-size: 15px;
-    }
+.addnewbook{
+  border: 2px solid #b14c6b;
+  gap: 25px;
+  width: 30%;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+}
 
-    nav{
-        padding: 15px 5%;
-    }
-    nav .nav-header{
-        font-size: 15px;
-    }
+input{
+  padding: 17px;
+  font-size: 17px;
+  color: #b14c6b;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #b14c6b;
+}
 
-    nav ul{
-        gap: 10px;
-    }
+input::placeholder {
+  color:#b14c6b;
+}
 
-    nav ul li a{
-        font-size: 12px;
-    }
+.addnewbook button{
+  color: #b14c6b;
+  outline: none;
+  border: none;
+  padding: 17px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #b14c6b;
+  font-size: 17px;
+  cursor: pointer;
+}
+.addnewbook button:hover{
+  color: #fff;
+  background-color: #b14c6b;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    width: 100%;
+    padding: 20px 10%;
+    font-size: 15px;
+  }
+
+  nav {
+    padding: 15px 5%;
+  }
+
+  nav .nav-header {
+    font-size: 15px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .link-list {
+    width: 70%;
+  }
+
+  .addnewbook{
+    width: 70%;
+
+  }
 }
