@@ -23,6 +23,9 @@ body {
   display: none !important;
 }
 
+.active{
+  display: flex;
+}
 footer {
   position: absolute;
   bottom: 0;
