@@ -9,7 +9,6 @@ class Book {
 export class Store {
   static getBooks() {
     let books;
-    // console.log(localStorage.getItem('books'))
     if (localStorage.getItem('books') === null) {
       books = [];
     } else {
