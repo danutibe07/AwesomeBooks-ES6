@@ -1,12 +1,13 @@
 import Interface from './class.js';
+
 const listOfBooks = document.getElementById('booklist');
 const addBooktoLib = document.getElementById('addbooks');
 const contactMe = document.getElementById('contact-info');
 const Boooks = document.getElementById('books');
 const addForm = document.getElementById('form');
 const contact = document.getElementById('contact');
-const Header = document.getElementById('heading')
-//Navigation for navbar
+const Header = document.getElementById('heading');
+// Navigation for navbar
 listOfBooks.addEventListener('click', () => {
   Boooks.classList.remove('hidden');
   addForm.classList.add('hidden');
@@ -14,9 +15,8 @@ listOfBooks.addEventListener('click', () => {
   listOfBooks.classList.add('active');
   addBooktoLib.classList.remove('active');
   contactMe.classList.remove('active');
-  Header.innerText = ("Awesome Libray");
+  Header.innerText = ('Awesome Libray');
   Interface.displayBooks();
-
 });
 
 addBooktoLib.addEventListener('click', () => {
@@ -26,7 +26,7 @@ addBooktoLib.addEventListener('click', () => {
   listOfBooks.classList.remove('active');
   addBooktoLib.classList.add('active');
   contactMe.classList.remove('active');
-  Header.innerText = ("Add books to Libray")
+  Header.innerText = ('Add books to Libray');
 });
 
 contactMe.addEventListener('click', () => {
@@ -36,5 +36,5 @@ contactMe.addEventListener('click', () => {
   listOfBooks.classList.remove('active');
   addBooktoLib.classList.remove('active');
   contactMe.classList.add('active');
-  Header.innerText = ("Contact us")
+  Header.innerText = ('Contact us');
 });

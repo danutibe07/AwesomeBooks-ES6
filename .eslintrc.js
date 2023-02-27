@@ -1,14 +1,17 @@
 module.exports = {
   "ecmaFeatures": {
-      "modules": true,
-      "spread" : true,
-      "restParams" : true
+    "modules": true,
+    "spread" : true,
+    "restParams" : true
+},
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true
   },
-  "env" : {
-      "browser" : true,
-      "node" : true,
-      "es6" : true
-  },
+  "extends": "eslint:recommended",
+  "overrides": [
+  ],
   "rules" : {
       "no-unused-vars" : 2,
       "no-undef" : 2
