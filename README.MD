@@ -40,6 +40,7 @@
 - Book List
 - Add New
 - Delete
+- Stores to Local Storage 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
