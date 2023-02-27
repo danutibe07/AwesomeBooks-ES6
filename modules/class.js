@@ -96,7 +96,6 @@ document.onreadystatechange = () => {
       // get values from input
       const title = document.getElementById('title').value;
       const author = document.getElementById('author').value;
-
       // Making sure the input field has a value
       if (title === '' || author === '') {
         Interface.showAlert('Fill all the input field', 'error');
@@ -104,15 +103,12 @@ document.onreadystatechange = () => {
         Interface.showAlert('Book has been added to the Libray', 'success');
         // creating a const(book) for each of the new books
         const book = new Book(title, author);
-
         // store Book
         Store.addBook(book);
-
         // clearing the inputfield after submitting
         Interface.clearInputfield();
       }
     });
-
     // Remove book
     document.querySelector('#books').addEventListener('click', (e) => {
       Interface.deleteBook(e.target);
