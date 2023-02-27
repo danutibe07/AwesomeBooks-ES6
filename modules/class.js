@@ -106,9 +106,6 @@ document.onreadystatechange = () => {
         // creating a const(book) for each of the new books
         const book = new Book(title, author);
 
-        // Adding book to Interface
-        // Interface.addBook(book);
-
         // store Book
         Store.addBook(book);
 
