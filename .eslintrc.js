@@ -1,18 +1,19 @@
 module.exports = {
-  "env": {
-      "browser": true,
-      "commonjs": true,
-      "es2021": true
+  "ecmaFeatures": {
+      "modules": true,
+      "spread" : true,
+      "restParams" : true
   },
-  "extends": "eslint:recommended",
-  "overrides": [
-  ],
+  "env" : {
+      "browser" : true,
+      "node" : true,
+      "es6" : true
+  },
+  "rules" : {
+      "no-unused-vars" : 2,
+      "no-undef" : 2
+  },
   "parserOptions": {
-      "ecmaVersion": "latest"
-  },
-  "rules": {
-  },
-  "parserOptions": {
-    "sourceType": "module"
-}
+      "sourceType": "module"
+  }
 }
