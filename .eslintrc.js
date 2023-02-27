@@ -11,5 +11,8 @@ module.exports = {
       "ecmaVersion": "latest"
   },
   "rules": {
-  }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+}
 }
