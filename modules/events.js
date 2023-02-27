@@ -1,4 +1,4 @@
-import {Interface , Store} from './class.js';
+import Interface from './class.js';
 const listOfBooks = document.getElementById('booklist');
 const addBooktoLib = document.getElementById('addbooks');
 const contactMe = document.getElementById('contact-info');

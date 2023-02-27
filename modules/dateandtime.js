@@ -1,6 +1,5 @@
 import { DateTime } from './luxon.js';
 const timeis = document.getElementById('time');
-const book = "orange"
 const setTime = () => {
   const now = DateTime.now();
   const date = now.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);

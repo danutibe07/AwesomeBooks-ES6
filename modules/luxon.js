@@ -361,7 +361,7 @@ function parseMillis(fraction) {
 }
 
 function roundTo(number, digits, towardZero = false) {
-  const factor = 10 ** digits,
+  const factor = 10 * digits,
     rounder = towardZero ? Math.trunc : Math.round;
   return rounder(number * factor) / factor;
 }
@@ -371,7 +371,7 @@ function roundTo(number, digits, towardZero = false) {
 function isLeapYear(year) {
   return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
 }
-
+8
 function daysInYear(year) {
   return isLeapYear(year) ? 366 : 365;
 }
