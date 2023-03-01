@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Books-ES6</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-header">Awesome Books</a>
+      <ul class="nav-menu">
+        <li><a id="booklist" class="nav-list">List</a></li>
+        <li><a id="addbooks" class="nav-list">Add New</a></li>
+        <li><a id="contact-info" class="nav-list">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="time"></p>
+    <h1 id="heading">Awesome Libray</h1>
+    <section id="books" class="active"></section>
+    <section id="form" class="form hidden">
+      <div class="addnewbook">
+        <input type="text" placeholder="Title" id="title" required />
+        <input type="text" placeholder="Author" id="author" required />
+        <button type="button" id="addbook" class="btn-default">Add Book to Libray</button>
+      </div>
+    </section>
+    <section id="contact" class="contact hidden">
+      <h3>Do you have any questions or you just want to say "Hello!!" ?</h3>
+      <h4>you can reach out to us!</h4>
+        <ol className="linkstrees">
+           <li class="link-list"> <a href="https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09" title="contact me via twitter">Twitter</a> </li>
+           <li class="link-list">  <a href="https://github.com/danutibe07" title="see my github">Github</a></li>
+        <li class="link-list"> <a href="https://api.whatsapp.com/send?phone=2349053164231&text=bring%20your%20web%20work%20"  title="Let's chat on Whatsapp">Whatsapp</a></li>
+            
+        </ol>
+    </section>
+    <footer>
+      Copyright &nbsp &nbsp All rights
+      reserved 2023
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

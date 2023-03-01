@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 33%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  background-color: #b14c6b;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  padding: 30px 10%;
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #b14c6b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav .nav-header {
+  font-size: 25px;
+  float: left;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+ol a {
+  color: #b14c6b;
+  padding: 24px 32px;
+  width: 30%;
+}
+
+nav ul li a {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+ol a:hover {
+  font-size: 23px;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 150px;
+  color: #b14c6b;
+}
+
+#books {
+  border: 2px solid #b14c6b;
+  text-align: center;
+  padding: 30px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.contact {
+  text-align: center;
+  color: #b14c6b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .linkstrees {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.link-list {
+  text-decoration: none;
+  text-align: center;
+  padding: 24px 32px;
+  background-color: #fff;
+  color: #b14c6b !important;
+  border: 2px solid #b14c6b;
+  border-radius: 8px;
+  list-style: none;
+  justify-self: center;
+  width: 30%;
+  margin: 20px auto;
+}
+
+.form {
+  text-align: center;
+  color: #b14c6b;
+}
+
+.addnewbook {
+  border: 2px solid #b14c6b;
+  gap: 25px;
+  width: 30%;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+input {
+  padding: 17px;
+  font-size: 17px;
+  color: #b14c6b;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #b14c6b;
+}
+
+input::placeholder {
+  color: #b14c6b;
+}
+
+article button {
+  padding: 10px;
+  color: #b14c6b;
+  border: 2px solid #b14c6b;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.addnewbook button {
+  color: #b14c6b;
+  outline: none;
+  padding: 17px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #b14c6b;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+article button:hover {
+  background-color: #b14c6b;
+  color: #fff;
+}
+
+.addnewbook button:hover {
+  color: #fff;
+  background-color: #b14c6b;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    width: 100%;
+    padding: 20px 10%;
+    font-size: 15px;
+  }
+
+  nav {
+    padding: 15px 5%;
+  }
+
+  nav .nav-header {
+    font-size: 15px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .link-list {
+    width: 70%;
+  }
+
+  .addnewbook {
+    width: 70%;
+  }
+}
+
+#time {
+  font-size: 24px;
+  cursor: pointer;
+  color: #b14c6b;
+  display: flex;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 10px auto;
+  border-bottom: 2px solid #b14c6b;
+}
+
+article div {
+  font-size: 25px;
+  color: #b14c6b;
+}
